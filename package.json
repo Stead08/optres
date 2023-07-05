@@ -1,0 +1,28 @@
+{
+  "name": "@stead08/optres",
+  "version": "0.1.0",
+  "description": "A library for optimizing error or undefined handling in JavaScript and TypeScript using Rust-like Result and Option types.",
+  "main": "index.ts",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "yarn jest",
+    "lint": "eslint --fix 'src/**/*.ts'"
+  },
+  "author": "Stead08",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "eslint": "^8.44.0",
+    "jest": "^28.0.0",
+    "prettier": "2.8.8",
+    "ts-jest": "^28.0.0",
+    "ts-node": "^10.9.1"
+  }
+}
