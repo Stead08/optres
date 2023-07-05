@@ -10,6 +10,14 @@
     "test": "yarn jest",
     "lint": "eslint --fix 'src/**/*.ts'"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Stead08/optres"
+  },
+  "bugs": {
+    "url": "https://github.com/Stead08/optres/issues"
+  },
+
   "author": "Stead08",
   "license": "MIT",
   "dependencies": {
