@@ -17,7 +17,16 @@
   "bugs": {
     "url": "https://github.com/Stead08/optres/issues"
   },
-
+  "homepage": "https://github.com/Stead08/optres#readme",
+  "keywords": [
+    "result",
+    "option",
+    "error",
+    "undefined",
+    "typescript",
+    "javascript",
+    "rust"
+  ],
   "author": "Stead08",
   "license": "MIT",
   "dependencies": {
