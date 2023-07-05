@@ -1,3 +1,7 @@
+/**
+ * A type that represents an optional value.
+ * It is similar to Rust's `Option<T>` type.
+ */
 export class Optional<T> {
   private readonly value: T | null | undefined;
 
@@ -29,7 +33,7 @@ export class Optional<T> {
 
   unwrap(): NonNullable<T> {
     if (this.value === null || this.value === undefined) {
-      throw new Error("Cannot unwrap a none value");
+      throw new Error('Cannot unwrap a none value');
     } else {
       return this.value as NonNullable<T>;
     }

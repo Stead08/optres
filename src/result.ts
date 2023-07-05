@@ -1,3 +1,7 @@
+/**
+ * Result type for handling errors
+ * It is similar to Rust's `Result<T, E>` type.
+ */
 export class Result<T, E extends Error> {
   private readonly value: T | E;
 
