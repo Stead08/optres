@@ -1,4 +1,6 @@
 import { Result } from './result';
+export { Optional } from './optional';
+export { Result } from './result';
 
 /**
  * use fetch api and return Result<Response, Error>
