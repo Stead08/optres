@@ -1,6 +1,6 @@
 {
   "name": "@stead08/optres",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A library for optimizing error or undefined handling in JavaScript and TypeScript using Rust-like Result and Option types.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

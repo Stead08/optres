@@ -1,11 +1,33 @@
-import { describe, it, expect } from 'vitest';
+import { expect, it, describe } from 'vitest';
 import { Optional } from '../src/optional';
+import { primitive } from './types';
+import { object } from './types';
 
-describe('Optional.some', () => {
-  it('should return Optional', () => {
-    const value = Optional.some(123);
-    expect(value).toEqual({
-      value: 123,
+// primitive types test
+describe('Optional', () => {
+  it('should create a some primitive value', () => {
+    primitive
+      .filter((value) => value !== null && value !== undefined)
+      .map((value) => {
+        const optional = Optional.some(value);
+        const result = optional.unwrap();
+        expect(result).toEqual(value);
+      });
+  });
+  it('should create a none primitive value', () => {
+    primitive
+      .filter((value) => value === null || value === undefined)
+      .map((value) => {
+        const optional = Optional.some(value);
+        const result = optional.is_none();
+        expect(result).toEqual(true);
+      });
+  });
+  it('should create a some object value', () => {
+    object.map((value) => {
+      const optional = Optional.some(value);
+      const result = optional.unwrap();
+      expect(result).toEqual(value);
     });
   });
 });
