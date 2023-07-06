@@ -14,10 +14,9 @@ https://doc.rust-lang.org/std/option/enum.Option.html
   https://doc.rust-lang.org/std/result/enum.Result.html
 ## Usage
 ```typescript
-import {fetchWithResult} from "../optres";
-import {Optional} from "../optres/src/optional";
-import {Result} from "../optres/src/result";
-
+import {fetchWithResult} from "@stead08/optres";
+import {Optional} from "@stead08/optres/dist/optional";
+import {Result} from "@stead08/optres/dist/result";
 
 // divide function returns Optional<number>
 function divide (a: number, b: number): Optional<number> {
